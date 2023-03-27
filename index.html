@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LE LABO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./asset/css/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./asset/images/favicon">
+  <link rel="apple-touch-icon" sizes="60x60" href="./asset/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./asset/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./asset/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./asset/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./asset/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./asset/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./asset/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./asset/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./asset/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./asset/images/favicon/favicon-16x16.png">
+
+  <link rel="shortcut icon" href="./asset/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./asset/images/favicon/favicon.ico" type="image/x-icon">
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="./asset/js/custom.js" defer></script>
+</head>
+<body>
+
+  <!-- load -->
+  <div class="load">
+    <div class="inst"> 
+      <div class="overflow-h"><span class="accent-txt"> — The classic mood 
+       </span></div>
+      <div class="overflow-h"><span class="accent-txt"> made in NewYork </span></div>
+      <div class="overflow-h"><span class="txt">  from recycled bottle, <br>
+        introducing our all new creation.</span></div>
+    </div>
+    <div class="load-main">
+      <span>L</span>
+      <span>E</span>
+        &nbsp;
+      <span>L</span>
+      <span>A</span>
+      <span>B</span>
+      <span>O</span>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="wrapper-p">
+      <div class="wrap-logo">
+        <a href="#" class="link-logo">
+          <h1 class="logo">
+            <span class="blind">로고</span>
+          </h1>
+        </a>
+      </div>
+      
+      <div class="search-area">
+        
+          <button class="search-icon"></button>
+          <form action="" class="search-form" method="get">
+            <label class="blind">검색창</label>
+            <input type="text" name="search" placeholder="Search for products, scents, samples" class="search-new-field">
+          </form>
+     
+      </div>
+      
+      
+      <div class="wrap-nav">
+        <div class="login-area">
+          <a href="" class="link-login">
+            <i class="icon-login"></i>
+            <span>Log in/Register</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav " data-menu="#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav " data-menu="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">gifting</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">our house</a>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+
+      <div class="nav-contents">
+        <ul class="menu group-shop" id="shop">
+          <li class="shop-item">
+            <a href="" class="link-overflow-h">
+              <div class="oh-w">
+                <div class="wrap-txt df">
+                  <span class="strong-txt shop-name">CLASSIC</span>
+                  <i class="omega"></i>
+                </div>
+                <div class="wrap-img">
+                  <div class="thumb-box"><img src="./asset/images/menu/green.png" alt=""></div>
+                  <div class="thumb-box"><img src="./asset/images/menu/yellow.png" alt=""></div>
+                  <div class="thumb-box"><img src="./asset/images/menu/red.png" alt=""></div>
+                  <div class="thumb-box"><img src="./asset/images/menu/purple.png" alt=""></div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-item">
+            <a href="" class="link-overflow-h">
+              <div class="oh-w">
+                <div class="df">
+                  <span class="strong-txt shop-name">DISCOVERY</span>
+                  <i class="omega"></i>
+                </div>
+              </div>
+            </a>
+          </li>
+      
+          <a href="" class="link-btn">
+            <span>See all</span>
+            <span class="blind">더보기 버튼</span>
+          </a>
+      
+        </ul>
+        <ul class="menu group-about" id="about">
+          <li class="about-item link-overflow-h"><a href="" class="link-page">About le labo</a></li>
+          <li class="about-item link-overflow-h"><a href="" class="link-page">Our creation</a></li>
+          <li class="about-item link-overflow-h"><a href="" class="link-page">Overheard le labo</a></li>
+        </ul>
+      
+      </div>
+
+    </div>
+    <div class="wrapper-m">
+      
+      <div class="wrap-logo">
+        <a href="#" class="link-logo">
+          <h1 class="logo">
+            <span class="blind">로고</span>
+          </h1>
+        </a>
+      </div>
+      <div class="search-area">
+        
+        <button class="search-icon"></button>
+        <form action="" class="search-form" method="get">
+          <label class="blind">검색창</label>
+          <input type="text" name="search" placeholder="Search for products, scents, samples" class="search-new-field">
+        </form>
+   
+      </div>
+      <div class="group-flex">
+        <div class="login-area">
+          <a href="" class="link-login">
+            <i class="icon-login"> <span class="blind">로그인 버튼</span></i>
+          </a>
+        </div>
+        <div class="wrap-nav">
+          <a class="btn-menu"><span class="blind">메뉴 버튼</span></a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="link-nav" data-menu="#shop">
+                  <span class="shop">Shop</span>
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="sub-nav-list">
+                  <li class="sub-nav-item">
+                    <a href="" class="link-sub-nav">Classic</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="" class="link-sub-nav">Discovery</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link-nav " data-menu="#about">
+                  <span class="about">about</span>
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="sub-nav-list">
+                  <li class="sub-nav-item">
+                    <a href="" class="link-sub-nav">About le labo</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="" class="link-sub-nav">Our creation</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="" class="link-sub-nav">Overheard le labo</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link-nav">gifting</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="link-nav">our house</a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+       
+     
+      </div>
+    </div>
+    
+  </header>
+  <main class="container">
+   
+    <!-- SC-VISUAL -->
+    <section class="sc-visual">
+      <div class="bg"><img src="./asset/images/background_img.png" alt=""></div>
+        <div class="group-grid">
+          <div class="pin-area scrub" data-y="-40">
+            <div class="title-area brand-identity">
+              <div class="overflow-h">
+                <div class="of-w">
+                  <div class="df">
+                    <strong class="brand-name strong-txt">
+                      LE LABO
+                    </strong>
+                    <i class="omega white"></i>
+                  </div>
+                  <span class="accent-txt"> — introducing our new creation...
+                  </span>
+                </div>
+              </div>
+              <div class="overflow-h">
+                <div class="of-w">
+                  <span class="accent-txt">
+                    Returns
+                  </span>
+                  <span class="txt">made in NewYork</span>
+                </div>
+              </div>
+              <div class="overflow-h">
+                <span class="txt of-w">The soul of a fragrance</span>
+              </div>
+              <div class="overflow-h">
+                <span class="txt of-w"> comes from the intention andit is </span>
+              </div>
+              <div class="overflow-h">
+                <span class="txt of-w">created and the attention with </span>
+              </div>
+              <div class="overflow-h">
+                <span class="txt of-w">which it is prepared</span>
+              </div>
+            </div>
+            <a class="link-btn">
+              <span>Shop now</span>
+            </a>
+          </div>
+          <div class="scroll-area scrub" data-y="10">
+            <div class="wrap-visual-img">
+              <div class="thumb-box box1">
+                <img src="./asset/images/bergamot.png" alt="">
+              </div>
+              <div class="thumb-box box2">
+                <img src="./asset/images/rose.png" 
+                alt="">
+              </div>
+              <div class="thumb-box box3">
+                <img src="./asset/images/santal.png" alt="">
+              </div>
+              <div class="thumb-box box4">
+                <img src="./asset/images/origin.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- SC-INFLU -->
+    <div class="sc-wrap">
+      <section class="sc-influ">
+        <ul class="group-influ">
+          <li class="influ-items">
+            <div class="txt-area">
+              <div class="desc-area">
+                <p class="desc">Explore Le Labo's fine fragrances in personalized perfumes, candles, shampoo, lotion and more. Shop signature scents online.</p>
+                <a href="" class="link-btn">
+                  <span>Learn more</span>
+                </a>
+              </div>
+              <div class="title-area">
+                <h2 class="title">
+                  <span class="accent-txt"> —A journey through the commune 
+
+                  </span>
+                  <span class="txt">of craftswomen and craftsmen who contribute and shape Le Labo's world. We believe that fine perfumery must be irreverent.
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div class="img-area">
+              <div class="pin-area">
+                
+                  <a href="" class="link-prd">
+                    <div class="thumb-box radius prd-r">
+                      <img src="./asset/images/influ_before.webp" alt="" class="front">
+                      <img src="../asset/images/influ_after.webp" alt="" class="back">
+                    </div>
+                    <div class="prd-info-box">
+                      <span class="name-prd">THE CLASSIC - </span>
+                      <span class="price">FAVORITE MOOD</span>
+                    </div>
+                  </a>
+                
+              </div>
+
+              <div class="scroll-area">
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/bodybar.webp" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">THE DISCOVERY</span>
+                </div>
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/candle1.webp" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">THE CANDLE</span>
+                </div>
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/sample.jpg" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">THE SAMPLER</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="influ-items">
+            <div class="txt-area second-grid">
+  
+              
+
+              <div class="title-area w">
+                <h2 class="title">
+                  <span class="accent-txt"> —We believe in the soulful power of thoughtful hands:  </span>
+                  <span class="txt">hand-picked roses, hand-poured candles, hand-formulated perfumes and handshake agreements
+                  </span>
+                </h2>
+              </div>
+
+              <div class="desc-area">
+                <p class="desc">OHM is a collectible furniture studio backed by a manufacturing workshop.</p>
+                <a href="" class="link-btn">
+                  <span>Learn more</span>
+                </a>
+              </div>
+
+            </div>
+            <div class="img-area">
+              <div class="scroll-area">
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/another.webp" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">ANOTHER 13</span>
+                </div>
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/noir.webp" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">THE NOIR 29</span>
+                </div>
+                <div class="wrap-box">
+                  <figure class="thumb-box radius">
+                    <img src="./asset/images/rose.webp" alt="" data-y="-10">
+                  </figure>
+                  <span class="txt-info">ROSE 31</span>
+                </div>
+              </div>
+              <div class="pin-area">
+                <div class="prd-box">
+                  <a href="" class="link-prd">
+                    <div class="thumb-box radius prd-y">
+                      <img src="./asset/images/influ_before2.webp" alt="" class="front">
+                      <img src="./asset/images/influ_after2.webp" alt="" class="back">
+                    </div>
+                    <div class="prd-info-box">
+                      <span class="name-prd">THE CLASSIC - </span>
+                      <span class="price">FAVORITE MOOD</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- SC-PRD -->
+      <section class="sc-prd">
+        <h2 class="title">Selected Products</h2>
+        <div class="prd-area">
+          <div class="swiper">
+            <ul class="prd-list swiper-wrapper">
+              <li class="prd-box swiper-slide">
+                <a href="" class="link-prd">
+                  <div class="thumb-box">
+                    <img src="./asset/images/selected_prd/another_before.webp" alt="" class="front">
+                    <img src="./asset/images/selected_prd/another_after.webp" alt="" class="back">
+                  </div>
+                  <div class="prd-cnt">
+                    <strong class="prd-title">ANOTHER 13</strong>
+                    <div class="prd-detail">
+                      <span class="volume">100 ml / 3.4 fl oz</span>
+                      <span class="type">eau de parfum</span>
+                    </div>
+                    <div class="prd-price-area">
+                      <span class="inquire">Inquire</span>
+                      <span class="price">EUR €223.14</span>
+                    </div>
+                  </div>
+            
+                </a>
+              </li>
+              <li class="prd-box swiper-slide">
+                <a href="" class="link-prd">
+                  <div class="thumb-box">
+                    <img src="./asset/images/selected_prd/berga_before.webp" alt="" class="front">
+                    <img src="./asset/images/selected_prd/berga_after.webp" alt="" class="back">
+                  </div>
+                  <div class="prd-cnt">
+                    <strong class="prd-title">BERGAMOTE 22</strong>
+                    <div class="prd-detail">
+                      <span class="volume">100 ml / 3.4 fl oz</span>
+                      <span class="type">eau de parfum</span>
+                    </div>
+                    <div class="prd-price-area">
+                      <span class="inquire">Inquire</span>
+                      <span class="price">EUR €223.14</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="prd-box swiper-slide">
+                <a href="" class="link-prd">
+                  <div class="thumb-box">
+                    <img src="./asset/images/selected_prd/jasmin_before.webp" alt="" class="front">
+                    <img src="./asset/images/selected_prd/jasmin_after.webp" alt="" class="back">
+                  </div>
+                  <div class="prd-cnt">
+                    <strong class="prd-title">JASMIN 17</strong>
+                    <div class="prd-detail">
+                      <span class="volume">100 ml / 3.4 fl oz</span>
+                      <span class="type">eau de parfum</span>
+                    </div>
+                    <div class="prd-price-area">
+                      <span class="inquire">Inquire</span>
+                      <span class="price">EUR €223.14</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="prd-box swiper-slide">
+                <a href="" class="link-prd">
+                  <div class="thumb-box">
+                    <img src="./asset/images/selected_prd/matcha_before.webp" alt="" class="front">
+                    <img src="./asset/images/selected_prd/matcha_after.webp" alt="" class="back">
+                  </div>
+                  <div class="prd-cnt">
+                    <strong class="prd-title">THÉ MATCHA 26</strong>
+                    <div class="prd-detail">
+                      <span class="volume">100 ml / 3.4 fl oz</span>
+                      <span class="type">eau de parfum</span>
+                    </div>
+                    <div class="prd-price-area">
+                      <span class="inquire">Inquire</span>
+                      <span class="price">EUR €223.14</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="link-btn">
+            <span>See all</span>
+          </a>
+        </div>
+        <div class="card-area">
+          <ul class="card-list">
+            <li class="wrap-card">
+              <div class="thumb-box radius">
+                <img src="./asset/images/selected_prd/card_1.jpg" alt="" data-y="-20">
+              </div>
+              <div class="info-box radius">
+                <div class="df">
+                  <strong class="brand-name strong-txt">
+                    NUM
+                  </strong>
+                  <i class="omega"></i>
+                </div>
+                <p class="desc">The classic mood made in NewYork from recycled bottle, introducing our all new creation.</p>
+                <a href="" class="link-btn">
+                  <span>Buy now</span>
+                </a>
+              </div>
+            </li>
+            <li class="wrap-card">
+              <div class="thumb-box radius">
+                <img src="./asset/images/selected_prd/GIFT.webp" alt="" data-y="-20" >
+              </div>
+              <div class="info-box radius">
+                <div class="df">
+                  <strong class="brand-name strong-txt">
+                    GIFT
+                  </strong>
+                  <i class="omega"></i>
+                </div>
+                <p class="desc">Le Labo eGift Cards can be used as payment for purchases at www.lelabofragrances.com only.
+                </p>
+      
+                <form name="contact-form" action="" method="post">
+                  <input type="email" name="contact-email" placeholder="Email">
+                  <input type="button" value="Enter" class="btn-enter">
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- SC-SNS -->
+      <section class="sc-sns">
+        <h2 class="title">
+          <span class="accent-txt">Follow us on Instagram</span>
+          <span class="txt">
+            <a href="" class="link-sns">@lelabofragrances</a>
+          </span>
+        </h2>
+        <ul class="thumb-list">
+          <li class="thumb-item">
+            <a href="" class="link-sns">
+              <div class="thumb-box radius">
+                <img src="./asset/images/sns1.webp" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="thumb-item">
+            <a href="" class="link-sns">
+              <div class="thumb-box radius">
+                <img src="./asset/images/sns2.webp" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="thumb-item">
+            <a href="" class="link-sns">
+              <div class="thumb-box radius">
+                <img src="./asset/images/sns3.webp" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="thumb-item">
+            <a href="" class="link-sns">
+              <div class="thumb-box radius">
+                <img src="./asset/images/sns4.webp" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap-footer">
+   
+      <div class="group-flex">
+        <div class="logo-area">
+          <div class="df">
+            <h2 class="footer-logo strong-txt">
+              LE&nbsp;LABO
+            </h2>
+            <i class="omega"></i>
+          </div>
+          <span class="accent-txt">
+            — The classic mood 
+          </span>
+          <span class="txt">
+            <span class="accent-txt">
+              made in NewYork 
+            </span>
+            <span>from recycled bottle,</span>
+            <span>introducing our all new creation.</span>
+          </span>
+        </div>
+        <nav class="footer-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">Classic</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">Gift</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">All</a>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">About le labo</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">Our creation</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">Overheard le labo</a>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">Shipping</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">Client Care</a>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">Visit Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">Legal notice</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="info-box radius">
+          <div class="df">
+            <strong class="brand-name strong-txt">
+              NEWS
+            </strong>
+            <i class="omega"></i>
+          </div>
+          <p class="desc">Sign up and stay up to date on product launches and pre order.</p>
+
+          <form name="contact-form" action="" method="post">
+            <input type="email" name="contact-email" placeholder="Email" class="field-email">
+            <input type="button" value="Enter" class="btn-enter">
+          </form>
+
+        </div>
+      </div>
+
+      <div class="copy-area">
+        <span class="copy">© 2023 LELABO.</span>
+        <span class="copy">All right Reserved.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,383 @@
+.header{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  .wrapper-p{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    @include tablet{
+      display: none;
+    }
+    .wrap-logo{
+      padding: 1vw 4vw;
+    }
+      border-bottom: 1px solid #ebebeb;
+  
+      .link-logo{
+        padding: 0.4vw 1vw;
+        line-height: 1;
+        position: relative;
+        background: #000;
+        border-radius: 5px;
+        display: block;
+        transform: rotate(-3deg);
+        transition: .5s;
+        display: block;
+        .logo{
+          background: url(../images/lelabo_logo_white.png) no-repeat;
+          width: 8vw;
+          height: 2.5vw;
+          background-size: 100% 100%;
+        }
+        @keyframes logo{
+          0%{
+            transform: rotate(-3deg);
+          }
+          50%{  
+            transform: rotate(3deg);
+          }
+          100%{
+            transform: rotate(-3deg);
+          }
+        }
+        &:hover{
+            animation: logo forwards .5s ease-in-out;
+          
+        }
+      }
+     
+      .search-area{
+        font-family: $font-util;
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        border: solid #ebebeb;
+        border-width: 0px 1px;
+        flex: 1;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.708);
+        padding-left: 4vw;
+        .search-icon{
+          background: url(../images/search.png);
+          width: 13px;
+          height: 14px;
+          background-size: 100% 100%;
+        }
+        .search-form{
+          width: 100%;
+          font-size: 1vw;
+          .search-new-field{
+            width: 100%;
+          }
+        }
+      }
+
+      .wrap-nav{
+        height: 6vw;
+  
+        .nav{
+          height: calc(100% / 2);
+          font-size: 1vw;
+          text-transform: uppercase;
+          letter-spacing: .1vw;
+          border-top: 1px solid #ebebeb;
+          .nav-list{
+            display: flex;
+            gap: 15px;
+            padding: 1vw 4vw;
+            .nav-item{
+             
+              .link-nav{
+                display: block;
+                position: relative;
+              
+                &::after{
+                  content: '';
+                  border-bottom: 1px solid #000;
+                  bottom: 0;
+                  left: auto;
+                  right: 0;
+                  width: 0%;
+                  position: absolute;
+                  transition: .2s;
+                }
+                &:hover{
+                  &::after{
+                    width: 100%;
+                    left: 0;
+                    right: auto;
+                  }
+                }
+              }
+            }
+          }
+        
+        }
+        .login-area{
+          height: calc(100% / 2);
+          .link-login{
+            display: block;
+            display: flex;
+            gap: 1vw;
+            padding: 1vw 4vw;
+            span{
+              font-family: $font-util;
+              font-size: 1vw;
+            }
+            .icon-login{
+              background: url(../images/login.png)no-repeat;
+              background-size: 100% 100%;
+              width: 12px;
+              height: 17px;
+              display: block;
+            }
+
+          }
+        }
+      }
+    
+
+
+    .nav-contents{
+      position: absolute;
+      display: grid;
+      border-radius: 5px;
+      width: 100%;
+      top: 6.5vw;
+      max-height: 0;
+      transition: max-height .4s ease-in-out;
+      overflow: hidden;
+      background: #ffffff;
+      .menu{
+        transition: opacity .4s;
+        &.show{
+          opacity: 1;
+        }
+      }
+      .group-shop{
+     
+        padding: 2vw 4vw;
+        align-self: flex-start;
+        grid-column: 1;
+        grid-row: 1;
+        opacity: 0;
+
+        .shop-item{
+          margin-bottom: 25px;
+          border-bottom: 1px solid rgba(199, 199, 199, 0.5);
+          .link-overflow-h{
+            padding-bottom: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        
+            .wrap-img{
+              display: flex;
+              position: absolute;
+              right: 3vw;
+              top: 0vw;
+              gap: 20px;
+              .thumb-box{
+                width: 3vw;
+              }
+            }
+          }
+          
+        }
+        .link-btn{
+          display: inline-block;
+          margin-top: 5vw;
+        }
+      }
+      .group-about{ 
+        align-self: flex-start;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 2vw 4vw;
+        letter-spacing: -.02vw;
+        font-weight: 500;
+        font-size: 3vw;
+        opacity: 0;
+        .about-item{
+          padding-bottom: 10px;
+          font-family: $font-strong;
+        }
+      }
+    }
+  }
+  .wrapper-m{
+    display: none;
+    @include tablet{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include mobile{
+      background: #fff;
+    }
+    border-bottom: 1px solid #ebebeb;
+    .wrap-logo{
+      position: relative;
+      width: 20vw;
+      @include mobile{
+        // width: 40vw;
+        height: auto;
+        width: auto;
+        padding: 2vw 6vw;
+      }
+      .link-logo{
+        padding: .7vw 1vw;
+        line-height: 1;
+        background: #000;
+        border-radius: 5px;
+        display: block;
+        transform: rotate(-3deg);
+        transition: .5s;
+        display: block;
+        position: absolute;
+        top: 50%;left: 50%;transform: translate(-50%, -50%);
+        .logo{
+          background: url(../images/lelabo_logo_white.png) no-repeat;
+          width: 11vw;
+          height: 3.5vw;
+          background-size: 100% 100%;
+        }
+        @include mobile{
+          padding: 10px 10px;
+          position: static;
+          transform: translate(0, 0);
+          .logo{
+            background: url(../images/lelabo_logo_white.png) no-repeat;
+            width: 102px;
+            height: 30px;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  
+    .group-flex{
+      display: flex;
+      align-items: center;
+      .wrap-nav{
+        .btn-menu{
+          display: block;
+          background: url(../images/menu_icon.png)no-repeat center / cover;
+          height: 80px;
+          width: 70px;
+          background-size: 21px 18px;
+          border-left: 1px solid #ebebeb;
+          @include mobile{
+            height: 13vh;
+            border-left: 1px solid #ebebeb;
+          }
+        }
+        .nav{
+          display: none;
+          // height: 0;
+          font-family: $font-strong;
+          background: #fff;
+          width: 100%;
+          position: absolute;
+          top:100%;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 1vw 3vw 2vw 3vw;
+          &.active{
+            display: block;
+          }
+          .nav-list{
+            width: 100%;
+            .nav-item{
+              color: #444;
+              padding: 1vw;
+              border-bottom: 1px solid #ebebeb;
+              .link-nav{
+                text-transform: uppercase;
+                display: flex;
+                justify-content: space-between;
+                .icon-arrow{
+                  background: url(../images/accordion_icon.png)no-repeat center/cover;
+                  background-size: 50%;
+                  width: 20px;
+                  transition: .5s;
+                  &.on{
+                    transform: rotate(-180deg);
+                  }
+
+                }
+              }
+              .sub-nav-list{
+                display: none;
+                padding: 1vw 2vw 1vw;
+                .sub-nav-item{
+                  padding: 2vw 1vw 1vw 1vw;
+                  font-size: 1.7vw;
+                }
+                &.on{
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      .login-area{
+        .link-login{
+          display: block;
+          height: 80px;
+          width: 70px;
+          position: relative;
+          @include mobile{
+            display: none;
+          }
+         
+          .icon-login{
+            display: block;
+            background: url(../images/login.png)no-repeat center/cover;
+            width: 12px;
+            height: 18px;
+            position: absolute;
+          top: 50%;left: 50%;
+          transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+    .search-area{
+      background: rgba(255, 255, 255, 0.708);
+      font-family: $font-util;
+      display: flex;
+      align-items: center;
+      gap: 3vw;
+      border-width: 0px 1px;
+      flex: 1;
+      height: 80px;
+      padding-left: 4vw;
+      @include mobile{
+        display: none;
+      }
+      .search-icon{
+        background: url(../images/search.png);
+        width: 13px;
+        height: 14px;
+        background-size: 100% 100%;
+      }
+      .search-form{
+        flex: 1;
+        font-size: 2vw;
+        height: 100%;
+        .search-new-field{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}

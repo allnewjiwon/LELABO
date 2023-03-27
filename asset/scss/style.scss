@@ -1,0 +1,17 @@
+
+
+@import './utils/mixins';
+@import './utils/variables'; 
+
+@import './base/reset'; 
+@import './base/typhography'; 
+@import './base/common'; 
+
+@import './component/card-info';
+@import './component/prd-box';
+
+@import './layout/footer'; 
+@import './layout/header'; 
+
+@import './main/main';
+

@@ -1,0 +1,90 @@
+.wrap-card{
+  .info-box{
+    background: #fff;
+    padding: 1.7vw;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 17vw;
+    height: 20vw;
+    .desc{
+      font-size: 1vw;
+      font-weight: normal;
+      margin: 10px 0 45px 0;
+      @include tablet{
+        margin: 2vw 0 ;
+      }
+    }
+    form{
+      font-size: 1vw;
+      .btn-enter{
+        cursor: pointer;
+      }
+    }
+    @include mobile{
+      width: 50vw;
+    
+    }
+    @include mobile{
+      .strong-txt{
+        font-size: 7vw;
+      }
+      left: 3vw;
+      bottom: 3vw;
+      padding: 3vw;
+      height: auto;
+      width: auto;
+      .desc{
+        display: none;
+      
+      }
+      .link-btn{
+        display: none;
+      }
+      form{
+        display: none;
+      }
+    }
+  }
+}
+
+.wrap-footer{
+  .info-box{
+    background: #fff;
+    padding: 1.7vw;
+    bottom: 40px;
+    left: 40px;
+    width: 17vw;
+    .desc{
+      font-size: 1vw;
+      font-weight: normal;
+      margin: 10px 0 45px 0;
+    }
+    form{
+      font-size: 1vw;
+      .btn-enter{
+        cursor: pointer;
+      }
+    }
+    @include mobile{
+      width: 100%;
+      padding: 5vw;
+      .strong-txt{
+        font-size: 8vw;
+      }
+      .desc{
+        font-size: 5.5vw;
+      }
+      form{
+        display: flex;
+        justify-content: space-between;
+        input{
+          font-size: 5vw;
+        }
+        .field-email{
+          flex: 2;
+        }
+      }
+    }
+  }
+}

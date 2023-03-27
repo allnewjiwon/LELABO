@@ -1,0 +1,83 @@
+//FOOTER
+
+.footer{
+  border-top: 1px solid #d2d2d2;
+  background-color: #f1f1f1;
+  .wrap-footer{
+    padding: 100px 4vw;
+    @include mobile{
+      padding: 15vw 6vw;
+    }
+    .group-flex{
+      display: flex;
+      justify-content: space-between;
+    
+      .logo-area{
+        .footer-logo{
+          font-size: 1.7vw;
+          letter-spacing: -.09vw;
+        }
+        span{
+          display: block;
+        }
+        .accent-txt{
+          font-size: 1.7vw;
+        }
+        .txt{
+          font-size: 1.5vw;
+          font-weight: normal;
+        }
+      }
+      .footer-nav{
+        display: grid;
+        gap: 5vw;
+        grid-template: auto/repeat(4,auto);
+        .nav-list{
+          font-size: 1vw;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+     
+        }
+      }
+      @include mobile{
+        flex-direction: column;
+        gap: 20vw;
+        .logo-area{
+          .footer-logo{
+            font-size: 10vw;
+          }
+          span{
+            display: inline-block;
+          }
+          .accent-txt{
+            font-size: 5vw;
+          }
+          .txt{
+            font-size: 5vw;
+          }
+        }
+        .footer-nav{
+          .nav-list{
+            gap: 3vw;
+            font-size: 4vw;
+            color: #8e9194;
+            .nav-item{
+             
+            }
+          }
+        }
+      }
+    }
+   
+  }
+  .copy-area{
+    color: #8e9194;
+    display: flex;
+    gap: 30px;
+    font-size: 1vw;
+    @include mobile{
+      margin-top: 15vw;
+    }
+  }
+}
