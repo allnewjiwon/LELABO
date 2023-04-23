@@ -37,9 +37,9 @@ $(function(){
   gsap.set('.load .inst .overflow-h span',{yPercent:100})
   gsap.set('.load .load-main > *',{yPercent:530})
   const loadAni = gsap.timeline({
-    // onComplete:function(){
-    //   $('.load').remove()
-    // }
+    onComplete:function(){
+      $('.load').remove()
+    }
   })
   loadAni.addLabel('a')
 
