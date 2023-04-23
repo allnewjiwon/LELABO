@@ -491,6 +491,8 @@ input {
 .header .wrapper-p .search-area .search-form {
   width: 100%;
   font-size: 1vw;
+  height: 6vw;
+  line-height: 6vw;
 }
 .header .wrapper-p .search-area .search-form .search-new-field {
   width: 100%;
